@@ -1,0 +1,14 @@
+<div ng-controller="HeatmapCtrl">
+
+  <div ng-if="chargement_en_cours" class="loader"></div>
+
+  <div ng-show="chargement_termine" style="width: 140%;" id="infomartions_temps">
+
+    <p>Temps récupération données<br /><span class="temps">{{tempsRequete}} s</span></p>
+    <p>Temps affichage heatmap<br /><span class="temps">{{tempsAffichageAngular}} s</span></p>
+
+  </div>
+
+  <plotly ng-show="chargement_termine" plotly-data="data" plotly-layout="layout" plotly-options="options" plotly-events="plotlyEvents" ></plotly>
+
+</div>

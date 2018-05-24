@@ -1,0 +1,54 @@
+<div ng-controller="MatriceCtrl">
+
+  <div ng-if="chargement_en_cours" class="loader"></div>
+
+    <form style="font-size: 1.3em;" novalidate class="form-horizontal">
+        <label>Matrice: </label>
+        <select name="idMatrice" id="idMatrice" ng-model="post.idMatrice">
+            <option value="1">9x9</option>
+            <option value="9">25x25</option>
+            <option value="7">50x50</option>
+            <option value="10">80x80</option>
+      	    <option value="8">100x100</option>
+        </select>
+        <label>Langage: </label>
+        <select name="langage" id="langage" ng-model="post.langage">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="r">R</option>
+            <option value="mathlab">Mathlab</option>
+	      </select>
+        <input type="submit" ng-click="envoie(post)" value="Inverser" />
+    </form>
+
+    <br />
+
+    <div ng-show="resultat_inversion_disponible" style="width: 200%;" id="resultat_inversion">
+
+      <div id="infomartions_temps">
+
+        <p>Temps récupération matrice en BDD<br /><span class="temps">{{tempsRequete}} s</span></p>
+        <p>Temps inversion matrice<br /><span class="temps">{{tempsInversion}} s</span></p>
+
+        <p>Temps transfert matrice inverse entre les serveurs<br /><span class="temps">{{tempsTransfert}} s</span></p>
+        <p>Temps debut requete angular à obtention matrices<br /><span class="temps">{{tempsRequeteAngular}} s</span></p>
+
+      </div>
+
+    <div id="ok" style="width: 92%;">
+
+      <div id="1" style="width: 49%; float: left;">
+        <h2 class="titre_matrice">Matrice initial</h2>
+        <p style="word-wrap: break-word;">{{matriceInitial}}</p>
+      </div>
+
+      <div id="2" style="width:49%; float: right;">
+        <h2 class="titre_matrice">Matrice inverse</h2>
+        <p style="word-wrap: break-word;">{{matriceInverse}}</p>
+      </div>
+
+    <div>
+
+  </div>
+
+</div>

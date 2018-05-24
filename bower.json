@@ -1,0 +1,18 @@
+{
+  "name": "testmaquette",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "angular-chart.js": "^1.1.1",
+    "chart.js": "^2.7.0",
+    "angular-bootstrap": "^2.5.0",
+    "jqwidgets": "^5.5.0",
+    "plotlyjs": "plotly#^1.18.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "testmaquetteApp"
+}

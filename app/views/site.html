@@ -1,0 +1,22 @@
+<p>This is the site view.</p>
+
+
+
+ <canvas id="line" class="chart chart-horizontal-bar" chart-data="data"
+       chart-labels="labels" chart-legend="true" chart-series="series" >
+</canvas>
+
+<table>
+  <thead> <!-- En-tête du tableau -->
+     <tr>
+         <th>Temps Requete</th>
+         <th>Temps Affichage</th>
+     </tr>
+ </thead>
+ <tbody> <!-- Corps du tableau -->
+       <tr>
+           <td>{{tempsRequete}} s</td>
+           <td>{{tempsAngular}} s</td>
+       </tr>
+</tbody>
+</table>

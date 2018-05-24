@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">-->
+    <!-- endbuild -->
+
+    <link rel="stylesheet" type="text/css" href="bower_components/jqwidgets/jqwidgets/styles/jqx.base.css" />
+
+</head>
+
+<body ng-app="testmaquetteApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+        <!--   <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">testmaquette</a>
+                </div>
+
+                <div class="collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#!/dateFormulaire">Relevé par date</a>
+                        </li>
+                        <li>
+                            <a ng-href="#!/periodeFormulaire">Relevé par période</a>
+                        </li>
+                        <li>
+                            <a ng-href="#!/relevemeteo">Relevé Météo</a>
+                        </li>
+                        <li>
+                            <a ng-href="#!/matrice">Matrice</a>
+                        </li>
+                      -->
+        <!--
+            <li>
+              <a ng-href="#!/#">Relevé par id station</a>
+            </li>
+            <li>
+              <a ng-href="#!/#">Relevé par id station et date</a>
+            </li>
+            <li>
+              <a ng-href="#!/#">Relevé par id station et periode</a>
+            </li>
+
+        </ul>
+
+        -->
+
+        <p class="lien_accueil"><a ng-href="#!/">Accueil</a></p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div ng-view=""></div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        ! function(A, n, g, u, l, a, r) {
+            A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                    (A[l].q = A[l].q || []).push(arguments)
+                }, A[l].l = +new Date, a = n.createElement(g),
+                r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+        }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/relevemeteo.js"></script>
+    <script src="scripts/services/serviceajax.js"></script>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script src="bower_components/plotlyjs/plotly.js"></script>
+    <script src="bower_components/angular-plotly/src/angular-plotly.js"></script>
+
+
+
+    <script type="text/javascript" src="bower_components/jqwidgets/scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/jqwidgets/jqxangular.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/scripts/demos.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/jqwidgets/jqxdraw.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/jqwidgets/jqxchart.core.js"></script>
+    <script type="text/javascript" src="bower_components/jqwidgets/jqwidgets/jqxchart.rangeselector.js"></script>
+
+
+    <script src="scripts/controllers/periode.js"></script>
+    <script src="scripts/controllers/date.js"></script>
+    <script src="scripts/controllers/site.js"></script>
+    <script src="scripts/controllers/dateformulaire.js"></script>
+    <script src="scripts/controllers/periodeformulaire.js"></script>
+    <script src="scripts/controllers/matrice.js"></script>
+    <script src="scripts/controllers/heapmap.js"></script>
+    <script src="scripts/controllers/heatmap.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

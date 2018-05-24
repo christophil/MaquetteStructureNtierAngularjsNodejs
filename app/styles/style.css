@@ -1,0 +1,109 @@
+#menu a{
+
+  text-decoration: none;
+}
+
+.carre_matrice {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #017df4;
+    margin-bottom: 5%;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    border-radius : 15px 15px / 15px 15px;
+}
+
+.carre_charge {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #016acf;
+    margin-bottom: 5%;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    border-radius : 15px 15px / 15px 15px;
+}
+
+.carre_heatmap {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #0155a6;
+    margin-bottom: 5%;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    border-radius : 15px 15px / 15px 15px;
+}
+
+.images {
+    width: 80%;
+}
+
+.texte {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 2px;
+}
+
+
+.conteneur {
+    padding: 10px;
+    overflow: auto;
+    margin-left: 10%;
+}
+
+#infomartions_temps{
+
+  width: 100%;
+
+}
+
+#infomartions_temps p{
+
+  display: inline-block;
+  width: 45%;
+  background: #005bbb;
+  border-radius : 10px 10px / 5px 5px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3em;
+  color: white;
+}
+
+#infomartions_temps p .temps{
+
+  color: #c4d63a;
+  font-size: 1em;
+}
+
+.titre_matrice{
+
+  color: white;
+  background: #b3b3b3;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.4em;
+  border-radius : 10px 10px / 5px 5px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,74 @@
+Configuration de l'appliction
+=============================
+
+		L'installation de npm permet de configurer les serveurs de manière plus efficace.
+
+		Le serveur algorithmes doit être lancé sous un environnement l'UNIX. Il est recommandé de lancer les autres serveurs sous un environnement UNIX egalemment.
+		
+
+
+
+
+		Configuration du serveur algorithmes
+		====================================
+
+		NodeJS, Python, java, mathlab et R sont nécessaires. 
+		Pour installer toutes les dépendances de NodeJS, utiliser la commande "npm install" dans le dossier contenant app.js .
+
+		Dans le dossier serveur_algorithmes :
+
+			Modifier app.js pour configurer 
+
+			- le port du serveur 
+			- l'adresse du serveur
+			- le chemin de la librairie mathlab
+
+		Pour le lancer, utiliser la commande "node app.js" depuis l'emplacement d'app.js
+
+
+
+
+
+		Configuration du serveur applicatif
+		===================================
+
+		Node est necéssaire.
+		Pour installer toutes les dépendances de NodeJS, utiliser la commande "npm install".
+		Pour installer toutes les dépendances de NodeJS, utiliser la commande "npm install" dans le dossier contenant app.js .
+
+		Dans le dossieur serveur_algorithmes :
+
+			Modifier app.js pour configurer :
+
+			- le port du serveur
+			- l'adresse du serveur
+			- l'adresse et le port du serveur algorithmes
+			- les paramètres de la base postgreSQL
+			- les paramètres de la base MySQL
+
+
+		Pour le lancer, utiliser la commande "node app.js" depuis l'emplacement d'app.js
+
+
+
+
+
+
+		Configuration d'AngularJS
+		=========================
+
+		Pour installer toutes les dépendances de NodeJS, utiliser la commande "npm install" dans le dossier contenant Grunfile.js .
+
+		Modifier Gruntfile.js pour configurer :
+
+		- le port de l'application ( ligne 73 )
+		- l'adresse de l'application ( ligne 75 )
+
+		Dans le dossier app/scripts/services :
+
+			Modifier serviceajax.js pour configurer l'addresse du serveur applicatif ( ligne 13 )
+
+
+		Pour le lancer, utiliser la commande "grunt serve" depuis l'emplacement Gruntfile.js
+
+
